@@ -61,4 +61,5 @@ footer>p{
 main>section>img{
     width: 15vw;
     height: 17vw;
+    border-radius: 10%;
 }
