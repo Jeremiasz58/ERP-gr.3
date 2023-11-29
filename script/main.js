@@ -1,5 +1,5 @@
 document.getElementById("CRM").addEventListener("click", ()=>{
-    window.location.replace("/crm")
+    window.location.replace("./crm.php")
 })
 document.getElementById("SPR").addEventListener("click", ()=>{
     window.location.replace("/spr")

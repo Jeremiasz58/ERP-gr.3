@@ -1,9 +1,9 @@
 document.getElementById("CRM").addEventListener("click", ()=>{
-    window.location.replace("/crm")
+    window.location.replace("./php/craaam.php")
 })
 document.getElementById("SPR").addEventListener("click", ()=>{
-    window.location.replace("/spr")
+    window.location.replace("./spr")
 })
 document.getElementById("HR").addEventListener("click", ()=>{
-    window.location.replace("/hr")
+    window.location.replace("./hr")
 })
