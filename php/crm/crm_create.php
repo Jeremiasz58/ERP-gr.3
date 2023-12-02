@@ -39,8 +39,7 @@
     <a href="./index.php">go to crm</a>
     <br>
 
-
-    <a href="../main/index.php/">go to main</a>
+    <a href="../main/index.php">go to main</a>
     <footer><p>&copy;DSERP INC</p></footer>
 </body>
 </html>

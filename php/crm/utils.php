@@ -60,7 +60,8 @@ function getKlient(){
 
         for($i = 0; $i < strlen($line); $i++){
             if($line[$i] == ",") $counter_comma++;
-            else if($line[$i] != PHP_EOL){
+            else if($line[$i] != "\n"){
+                
                 switch($counter_comma){
                     case 0:
                         $klienci[$counter_line]["klient_id"] .= $line[$i];
@@ -106,7 +107,7 @@ function addKlient($imie, $email, $status){
     }
 
     $klienci_handle = fopen("./klienci.csv", "a");
-    $value = "\n".$id.','.$imie.','.$email.','.$status;
+    $value = "\n".$id.','.$imie.','.$email.','.(int)$status;
 
     fwrite($klienci_handle, $value);
 
@@ -152,8 +153,21 @@ function deleteKlient($id){
     unset($klienci[findKlient($id)]);
     $klienci = array_values($klienci);
 
-    print_r($klienci);
     writeKlient($klienci);
 }
 
+function updateKlient($id, $imie, $email, $status){
+    if(!findKlient($id)) return;
+
+    $klienci = getKlient();
+    // echo $klienci[findKlient($id)]["imie"];
+    // echo $klienci[findKlient($id)]["email"];
+    // echo $klienci[findKlient($id)]["status"];
+
+    $klienci[findKlient($id)]["klient_imie"] = $imie;
+    $klienci[findKlient($id)]["klient_email"] = $email;
+    $klienci[findKlient($id)]["klient_status"] = $status;
+
+    writeKlient($klienci);
+}
 ?>
