@@ -34,9 +34,8 @@
 
     // Sortuje rosnąco po pierwszym kluczu w obiekcie -> id
 function compareById($element1, $element2){
-    return $element1[key($element1)] - $element2[key($element2)];
+    return (int)$element1[key($element1)] - (int)$element2[key($element2)];
 }
-    
 
 function getKlient(){
     $klienci = array();
@@ -87,12 +86,17 @@ function getKlient(){
     return $klienci;
 }
 
-function addKlient($imie, $email, $status){
-
+function getKlientId(){
     $idArr = array();
     foreach(getKlient() as $element){
         array_push($idArr, $element["klient_id"]);
     }
+    return $idArr;
+}
+
+function addKlient($imie, $email, $status){
+
+    $idArr = getKlientId();
 
     $id = rand(1,100);
     if(in_array($id, $idArr)){
@@ -109,6 +113,47 @@ function addKlient($imie, $email, $status){
     fclose($klienci_handle);
 }
 
+function writeKlient($klienci){
+    $klienci_handle = fopen("./klienci.csv","w");
 
+    $content = "";
+    for($i = 0; $i < sizeof($klienci); $i++){
+        if(!$klienci[$i]["klient_id"]) continue;
+        $content .= $klienci[$i]["klient_id"].",";        
+        $content .= $klienci[$i]["klient_imie"].",";        
+        $content .= $klienci[$i]["klient_email"].",";        
+        $content .= (int)$klienci[$i]["klient_status"]."\n";        
+    }
+
+    fwrite($klienci_handle, $content);
+    fclose($klienci_handle);  
+}
+
+function findKlient($id){
+    $count = 0;
+    $found = false;
+    while($count < sizeof(getKlient())){
+        if(getKlient()[$count]["klient_id"] == $id){
+            $found = true;
+            break;
+        } 
+        $count++;
+    }    
+    if($found){
+        return $count;
+    }
+    return $found;
+}
+
+function deleteKlient($id){
+    if(!findKlient($id)) return;
+
+    $klienci = getKlient();
+    unset($klienci[findKlient($id)]);
+    $klienci = array_values($klienci);
+
+    print_r($klienci);
+    writeKlient($klienci);
+}
 
 ?>
