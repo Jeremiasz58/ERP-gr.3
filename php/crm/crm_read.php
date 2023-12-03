@@ -20,9 +20,7 @@
         include "./utils.php";
         
         foreach(getKlient() as $element){
-
             if(!$element["klient_id"]) continue;
-
             echo $element["klient_id"].', '. $element["klient_imie"].', '.$element["klient_email"].', '.(int)$element["klient_status"]."<br>";
         }
         

@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../style/podstrony.css">
-    <title>Document</title>
+    <title>DSERP V3 CRM - CREATE</title>
 </head>
 <body>
     <header>
-        <h1>CRM</h1>
+        <h1>CRM - CREATE</h1>
     </header>
 
     <?php
@@ -22,24 +22,31 @@
 
 
     ?>
-
+<div id="container">
     <form action="#" method="POST">
-        <label for="imie">Imie:</label><br>
-        <input type="text" name="imie" placeholder="Spejson"><br>
+        <label for="imie">Imię:</label><br>
+        <input type="text" name="imie" placeholder="Paweł"><br>
         <label for="email">E-mail:</label><br>
-        <input type="text" name="email"><br>
-        <label for="status">Subskrybcja?    </label>
+        <input type="text" name="email" placeholder="nierodka@wp.pl"><br>
+        <label for="status">Subskrypcja:    </label>
         <input type="checkbox" name="status" value="1">
 
-
-        <input type="submit" value="DODAJ USERA">
+        <div id="fbts_end">
+        <input type="submit" class="fbts" value="Dodaj">
+        <input type="reset" class="fbts" value="Wyczyść">
+        </div>
+        <section id="back" class="btn">
+            <a href="index.php"><p id="backbtn" >↶</p></a>
+        </section>
     </form>
+   
 
+    </div>
 
-    <a href="./index.php">go to crm</a>
+    <!-- <a href="./index.php">go to crm</a>
     <br>
 
-    <a href="../main/index.php">go to main</a>
+    <a href="../main/index.php">go to main</a> -->
     <footer><p>&copy;DSERP INC</p></footer>
 </body>
 </html>

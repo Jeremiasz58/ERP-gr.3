@@ -4,30 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../style/index.css">
-    <script src="../../script/index.js" defer></script>
+    <script src="../../script/crm_index.js" defer></script>
     <link rel="icon" type="image/x-icon" href="../img/blacks/logo_b.ico">
-    <title>DSERP V3</title>
+    <title>DSERP V3 CRM</title>
 </head>
 <body>
     <header>
-        <h1>DSERP V3 crm</h1>
+        <h1>CRM</h1>
     </header>
     <main>
-        <section id="CRM" class="btn">
-            <img src="" alt="create">
+        <section id="CRM_c" class="btn">
+            <img src="../../img/blacks/crm_create.jpg" alt="create">
             <p>CREATE</p>
         </section>
-        <section id="SPR" class="btn">
-            <img src="" alt="read">
+        <section id="CRM_r" class="btn">
+            <img src="../../img/blacks/crm_read.jpg" alt="read">
             <p>READ</p>
         </section>
-        <section id="HR" class="btn">
-            <img src="" alt="update">
+        <section id="CRM_u" class="btn">
+            <img src="../../img/blacks/crm_update.jpg" alt="update">
             <p>UPDATE</p>
+        </section>
+        <section id="back" class="btn">
+            <p id="backbtn" >↶</p>
         </section>
     </main>
 
-    <a href="./crm_create.php">go to create</a>
+    <!-- <a href="./crm_create.php">go to create</a>
     <br>
     <a href="./crm_read.php">go to read</a>
     <br>
@@ -35,14 +38,15 @@
     <br>
     <a href="./crm_delete.php">go to delete</a>
     <br>
-    <a href="../main/index.php">go to main</a>
+    <a href="../main/index.php">go to main</a> -->
     
     <footer><p>&copy;DSERP INC</p></footer>
 
     <?php
 
         include "./utils.php";
-        print_r(getKlient());    
+        updateKlient(29, "Albrech", "Hochenzollern@1911.com", 1);
+        // print_r(getKlient());    
     ?>
 </body>
 </html>

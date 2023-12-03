@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+    <!-- ! -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,9 +27,7 @@
             <p>HR</p>
         </section>
     </main>
-    <a href="../crm/index.php">go to crm</a>
-    <br>
-    <a href="../sprzedaz/index.php">go to sprzedaz</a>
+    <!-- <a href="../crm/index.php">go to crm</a> -->
 
     <footer><p>&copy;DSERP INC</p></footer>
 </body>
