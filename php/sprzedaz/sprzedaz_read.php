@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../style/index.css">
     <script src="../../script/index.js" defer></script>
-    <link rel="icon" type="image/x-icon" href="../img/blacks/logo_b.ico">
+    <link rel="icon" type="image/x-icon" href="../../img/blacks/logo_b.ico">
     <title>DSERP V3</title>
 </head>
 <body>
@@ -13,22 +13,22 @@
         <h1>DSERP V3 read</h1>
     </header>
     <main>
-        <p>TEMPLATE: id --- imie --- email --- status</p>
+        <p>TEMPLATE: id --- produkt --- cena --- data</p>
         <br>
         <?php
         
         include "./utils.php";
         
-        foreach(getKlient() as $element){
+        foreach(getSprzedaz() as $element){
 
-            if(!$element["klient_id"]) continue;
+            if(!$element["sprzedaz_id"]) continue;
 
-            echo $element["klient_id"].', '. $element["klient_imie"].', '.$element["klient_email"].', '.(int)$element["klient_status"]."<br>";
+            echo $element["sprzedaz_id"].', '. $element["sprzedaz_produkt"].', '.$element["sprzedaz_cena"].', '.$element["sprzedaz_data"]."<br>";
         }
         
         ?>
     </main>
-    <a href="./index.php">go to crm</a>
+    <a href="./index.php">go to sprzedaz</a>
     <br>
     <a href="../main/index.php">go to main</a>
 

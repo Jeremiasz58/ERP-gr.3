@@ -160,9 +160,6 @@ function updateKlient($id, $imie, $email, $status){
     if(!findKlient($id)) return;
 
     $klienci = getKlient();
-    // echo $klienci[findKlient($id)]["imie"];
-    // echo $klienci[findKlient($id)]["email"];
-    // echo $klienci[findKlient($id)]["status"];
 
     $klienci[findKlient($id)]["klient_imie"] = $imie;
     $klienci[findKlient($id)]["klient_email"] = $email;

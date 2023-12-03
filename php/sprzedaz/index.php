@@ -10,26 +10,34 @@
 </head>
 <body>
     <header>
-        <h1>DSERP V3</h1>
+        <h1>DSERP V3 sprzedaz</h1>
     </header>
     <main>
         <section id="CRM" class="btn">
-            <img src="../../img/blacks/crm_b.jpg" alt="crmimg">
-            <p>CRM</p>
+            <img src="" alt="create">
+            <p>CREATE</p>
         </section>
         <section id="SPR" class="btn">
-            <img src="../../img/blacks/money_b.jpg" alt="sprzedazimg">
-            <p>SPRZEDAŻ</p>
+            <img src="" alt="read">
+            <p>READ</p>
         </section>
         <section id="HR" class="btn">
-            <img src="../../img/blacks/hr_b.jpg" alt="hrimg">
-            <p>HR</p>
+            <img src="" alt="update">
+            <p>UPDATE</p>
         </section>
     </main>
-    <a href="../crm/index.php">go to crm</a>
-    <br>
-    <a href="../sprzedaz/index.php">go to sprzedaz</a>
 
+    <a href="./sprzedaz_create.php">go to create</a>
+    <br>
+    <a href="./sprzedaz_read.php">go to read</a>
+    <br>
+    <a href="./sprzedaz_update.php">go to update</a>
+    <br>
+    <a href="./sprzedaz_delete.php">go to delete</a>
+    <br>
+    <a href="../main/index.php">go to main</a>
+    
     <footer><p>&copy;DSERP INC</p></footer>
+
 </body>
 </html>
