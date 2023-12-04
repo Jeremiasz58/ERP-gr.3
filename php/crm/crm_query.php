@@ -17,6 +17,7 @@
         
         include "./utils.php";
         
+        // 1 - qEmail
         if($_POST){
             switch($_POST["id"]){
                 case 1:

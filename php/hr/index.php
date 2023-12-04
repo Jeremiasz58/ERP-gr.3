@@ -35,6 +35,8 @@
     <br>
     <a href="./hr_delete.php">go to delete</a>
     <br>
+    <a href="./hr_query.php">go to query</a>
+    <br>
     <a href="../main/index.php">go to main</a>
     
     <footer><p>&copy;DSERP INC</p></footer>

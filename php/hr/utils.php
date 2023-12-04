@@ -159,4 +159,65 @@ function updatePracownik($id, $imie, $nazwisko, $data_ur, $clearance, $departmen
 
     writePracownicy($pracownicy);
 }
+
+function qNajstarszyNajmlodszy(){
+    $agePracownicy = array();
+    $maxAge = max(array_column(getPracownicy(),"pracownik_data_ur"));
+    $minAge = min(array_column(getPracownicy(),"pracownik_data_ur"));
+
+    array_push($agePracownicy,getPracownicy()[array_search($maxAge,array_column(getPracownicy(),"pracownik_data_ur"))]["pracownik_imie"].' '.getPracownicy()[array_search($maxAge,array_column(getPracownicy(),"pracownik_data_ur"))]["pracownik_nazwisko"]);
+    array_push($agePracownicy,getPracownicy()[array_search($minAge,array_column(getPracownicy(),"pracownik_data_ur"))]["pracownik_imie"].' '.getPracownicy()[array_search($minAge,array_column(getPracownicy(),"pracownik_data_ur"))]["pracownik_nazwisko"]);
+    // array_push($agePracownicy,getPracownicy()[array_search($minAge,array_column(getPracownicy(),"pracownik_data_ur"))]);
+
+    return $agePracownicy;
+}
+
+function qAvgWiek(){
+    $wieki = array();
+    foreach(array_column(getPracownicy(),"pracownik_data_ur") as $element){
+        array_push($wieki, date("Y") - date("Y", strtotime($element)));
+    }
+    return array_sum($wieki) / sizeof($wieki);
+}
+
+function qUrodziny($date){
+    // 1 dzien = 86400
+    // 14 dzien = 1209600
+    $floor = strtotime($date) - 1209600;
+    $ceiling = strtotime($date) + 1209600;
+
+    $pracownicy = array();
+
+    foreach(getPracownicy() as $element){
+        if(strtotime($element["pracownik_data_ur"]) >= $floor && strtotime($element["pracownik_data_ur"]) <= $ceiling){
+            array_push($pracownicy, $element["pracownik_imie"].' '.$element["pracownik_nazwisko"].' '.$element["pracownik_data_ur"]);
+        }
+    }
+
+    return $pracownicy;
+}
+
+function qCountClearance($clearance){
+    $clearanceCount = 0;
+    foreach(getPracownicy() as $element){
+        if($element["pracownik_clearance"] >= $clearance){
+            $clearanceCount++;
+        }
+    }
+    return $clearanceCount;
+}
+
+function qCountDepartment(){
+    $departmentMap = array();
+    foreach(getPracownicy() as $element){
+        if(!array_key_exists($element["pracownik_department"],$departmentMap)){
+            $departmentMap[$element["pracownik_department"]] = 1;
+        }
+        else{
+            $departmentMap[$element["pracownik_department"]]++;
+        }
+    }
+    return $departmentMap;
+}
+
 ?>
