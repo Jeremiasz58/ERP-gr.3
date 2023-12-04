@@ -25,11 +25,19 @@
             <img src="../../img/blacks/crm_update.jpg" alt="update">
             <p>UPDATE</p>
         </section>
-        <section id="back" class="btn">
+        <section id="CRM_d" class="btn">
+            <img src="../../img/blacks/crm_delete.jpg" alt="delete">
+            <p>DELETE</p>
+        </section>
+        <section id="CRM_q" class="btn">
+            <img src="../../img/blacks/crm_queries.jpg" alt="queries">
+            <p>QUERIES</p>
+        </section>
+        
+    </main>
+    <section id="back">
             <p id="backbtn" >↶</p>
         </section>
-    </main>
-
     <!-- <a href="./crm_create.php">go to create</a>
     <br>
     <a href="./crm_read.php">go to read</a>
@@ -38,9 +46,9 @@
     <br>
     <a href="./crm_delete.php">go to delete</a>
     <br>-->
-    <a href="./crm_query.php">go to query</a> 
+    <!-- <a href="./crm_query.php">go to query</a>  -->
     
-    <footer><p>&copy;DSERP INC</p></footer>
+    <footer ><p>&copy;DSERP INC</p></footer>
 
     <?php
 

@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../style/index.css">
     <script src="../../script/index.js" defer></script>
-    <link rel="icon" type="image/x-icon" href="../img/blacks/logo_b.ico">
+    <link rel="icon" type="image/x-icon" href="../../img/blacks/logo_b.ico">
+    
     <title>DSERP V3</title>
 </head>
 <body>
@@ -17,7 +18,6 @@
         
         include "./utils.php";
         
-        // 1 - qEmail
         if($_POST){
             switch($_POST["id"]){
                 case 1:

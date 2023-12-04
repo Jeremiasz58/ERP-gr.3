@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../style/podstrony.css">
-    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="../../img/blacks/logo_b.ico">
+    <title>DSERP V3 CRM - DELETE</title>
 </head>
 <body>
     <header>
-        <h1>CRM</h1>
+        <h1>CRM - DELETE</h1>
     </header>
 
     <?php
