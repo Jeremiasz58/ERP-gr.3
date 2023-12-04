@@ -37,8 +37,8 @@
     <a href="./crm_update.php">go to update</a>
     <br>
     <a href="./crm_delete.php">go to delete</a>
-    <br>
-    <a href="../main/index.php">go to main</a> -->
+    <br>-->
+    <a href="./crm_query.php">go to query</a> 
     
     <footer><p>&copy;DSERP INC</p></footer>
 

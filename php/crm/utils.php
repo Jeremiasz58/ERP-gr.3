@@ -168,4 +168,8 @@ function updateKlient($id, $imie, $email, $status){
 
     writeKlient($klienci);
 }
+
+function qEmail(){
+    return(array_column(getKlient(),"klient_email"));
+}
 ?>
