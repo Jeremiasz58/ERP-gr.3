@@ -20,6 +20,8 @@
         // 1 - qNajstarszyNajmlodszy
         // 2 - qAvgWiek
         // 3 - qUrodziny
+        // 4 - qCountClearance
+        // 5 - qCountDepartment
 
         if($_POST){
             switch($_POST["id"]){

@@ -10,10 +10,9 @@
 // $sprzedaz_cena = htmlentities($_POST['cena']);
 // $sprzedaz_data = htmlentities($_POST['data']);
 
-    // Sortuje rosnąco po pierwszym kluczu w obiekcie -> id
-function compareById($element1, $element2){
-    return (int)$element1[key($element1)] - (int)$element2[key($element2)];
-}
+require "../utils.php";
+
+
 
 function getSprzedaz(){
     $sprzedaz = array();
@@ -145,4 +144,53 @@ function updateSprzedaz($id, $produkt, $cena, $data){
 
     writeSprzedaz($sprzedaz);
 }
+
+function qMaxSprzedaz(){
+    return getSprzedaz()[array_search(max(array_column(getSprzedaz(), "sprzedaz_cena")), array_column(getSprzedaz(), "sprzedaz_cena"))];
+}
+
+function qMaxProdukt(){
+    $produktMap = array();
+    foreach(getSprzedaz() as $element){
+        if(!array_key_exists($element["sprzedaz_produkt"],$produktMap)){
+            $produktMap[$element["sprzedaz_produkt"]] = $element["sprzedaz_cena"];
+        }
+        else{
+            $produktMap[$element["sprzedaz_produkt"]] += $element["sprzedaz_cena"];
+        }
+    }
+    arsort($produktMap);
+    return array(array_key_first($produktMap) => $produktMap[array_key_first($produktMap)]);
+}
+
+function qCountSprzedaz(&$date1, &$date2){
+    $date1 = strtotime($date1);
+    $date2 = strtotime($date2);
+    $date1 > $date2 ? swap($date1, $date2) : null;
+    $countSprzedaz = 0;
+
+    foreach(getSprzedaz() as $element){
+        if(strtotime($element["sprzedaz_data"]) >= $date1 && strtotime($element["sprzedaz_data"]) <= $date2){
+            $countSprzedaz++;
+        }
+    }
+
+    return $countSprzedaz;
+}
+
+function qSumSprzedaz(&$date1, &$date2){
+    $date1 = strtotime($date1);
+    $date2 = strtotime($date2);
+    $date1 > $date2 ? swap($date1, $date2) : null;
+    $sumSprzedaz = 0;
+
+    foreach(getSprzedaz() as $element){
+        if(strtotime($element["sprzedaz_data"]) >= $date1 && strtotime($element["sprzedaz_data"]) <= $date2){
+            $sumSprzedaz += $element["sprzedaz_cena"];
+        }
+    }
+
+    return $sumSprzedaz;
+}
+
 ?>

@@ -32,10 +32,7 @@
 // $pracownik_clearence = htmlentities($_POST['clearence']);
 // $pracownik_department = htmlentities($_POST['department']);
 
-    // Sortuje rosnąco po pierwszym kluczu w obiekcie -> id
-function compareById($element1, $element2){
-    return (int)$element1[key($element1)] - (int)$element2[key($element2)];
-}
+require "../utils.php";
 
 function getKlient(){
     $klienci = array();
