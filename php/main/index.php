@@ -17,7 +17,7 @@
             <img src="../../img/blacks/crm_b.jpg" alt="crmimg">
             <p>CRM</p>
         </a>
-        <a id="SPR" class="btn" href="../spr">
+        <a id="SPR" class="btn" href="../sprzedaz">
             <img src="../../img/blacks/money_b.jpg" alt="sprzedazimg">
             <p>SPRZEDAŻ</p>
         </a>
