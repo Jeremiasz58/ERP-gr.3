@@ -13,27 +13,27 @@
         <h1>DSERP V3 sprzedaz</h1>
     </header>
     <main>
-        <section id="sprzedaz_c" class="btn">
+
+        <a href="sprzedaz_create.php" id="sprzedaz_c" class="btn">
             <img src="../../img/blacks/crm_create.jpg" alt="create">
             <p>CREATE</p>
-        </section>
-        <section id="sprzedaz_r" class="btn">
+        </a>
+        <a href="sprzedaz_read.php" id="sprzedaz_r" class="btn">
             <img src="../../img/blacks/crm_read.jpg" alt="read">
             <p>READ</p>
-        </section>
-        <section id="sprzedaz_u" class="btn">
+        </a>
+        <a href="sprzedaz_update.php" id="sprzedaz_u" class="btn">
             <img src="../../img/blacks/crm_update.jpg" alt="update">
             <p>UPDATE</p>
-        </section>
-        <section id="sprzedaz_d" class="btn">
+        </a>
+        <a href="sprzedaz_delete.php" id="sprzedaz_d" class="btn">
             <img src="../../img/blacks/crm_delete.jpg" alt="delete">
             <p>DELETE</p>
-        </section>
-        <section id="sprzedaz_q" class="btn">
+        </a>
+        <a href="sprzedaz_query.php" id="sprzedaz_q" class="btn">
             <img src="../../img/blacks/crm_queries.jpg" alt="queries">
             <p>QUERIES</p>
-        </section>
-        
+        </a>
     </main>
     <section id="back">
             <p id="backbtn" >↶</p>

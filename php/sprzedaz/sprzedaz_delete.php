@@ -27,7 +27,7 @@
         <input type="submit" class="fbts" value="Usun">
         <input type="reset" class="fbts" value="Wyczyść">
         </div>
-        <a id="back" id="backbtn"href="index.php">↶</a>
+        <a id="backbtn"href="index.php">↶</a>
     </form>
 
 
