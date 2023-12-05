@@ -49,9 +49,6 @@
             include "./sprzedaz_query_select.html";
         ?>
     </main>
-    <a href="./index.php">go to spr</a>
-    <br>
-    <a href="../main/index.php">go to main</a>
 
     <footer><p>&copy;DSERP INC</p></footer>
 </body>
