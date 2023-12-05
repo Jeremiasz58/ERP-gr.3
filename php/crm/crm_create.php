@@ -37,9 +37,9 @@
         <input type="submit" class="fbts" value="Dodaj">
         <input type="reset" class="fbts" value="Wyczyść">
         </div>
-        <section id="back" class="btn">
-            <a href="index.php"><p id="backbtn" >↶</p></a>
-        </section>
+        <a href="../main"><section id="back" class="btn">
+            <p id="backbtn" >↶</p>
+        </section></a>
     </form>
    
 
