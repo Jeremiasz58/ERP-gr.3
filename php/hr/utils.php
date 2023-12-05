@@ -174,7 +174,7 @@ function qAvgWiek(){
     foreach(array_column(getPracownicy(),"pracownik_data_ur") as $element){
         array_push($wieki, date("Y") - date("Y", strtotime($element)));
     }
-    return array_sum($wieki) / sizeof($wieki);
+    return round(array_sum($wieki) / sizeof($wieki), 2);
 }
 
 function qUrodziny($date){
