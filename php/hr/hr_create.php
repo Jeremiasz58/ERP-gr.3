@@ -42,11 +42,12 @@
         <br>
         <input type="text" name="department">
         <br>
-        <input type="submit" value="DODAJ PRACOWNIKA">
+        <input type="submit" value="DODAJ PRACOWNIKA"><br>
+        <a href="./index.php" id="backbtn">↶</a>
     </form>
 
 
-    <a href="./index.php">go to hr</a>
+
     <br>
 
     <a href="../main/index.php">go to main</a>

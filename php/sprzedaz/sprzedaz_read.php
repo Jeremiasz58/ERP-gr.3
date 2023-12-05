@@ -27,8 +27,10 @@
         }
         
         ?>
-        <a id="back" id="backbtn"href="index.php">↶</a>
     </main>
+    <a href="./index.php">go to sprzedaz</a>
+    <br>
+    <a href="../main/index.php">go to main</a>
 
     <footer><p>&copy;DSERP INC</p></footer>
 </body>
