@@ -49,7 +49,7 @@
             include "./sprzedaz_query_select.html";
         ?>
     </main>
-    <a href="./index.php">go to hr</a>
+    <a href="./index.php">go to spr</a>
     <br>
     <a href="../main/index.php">go to main</a>
 
