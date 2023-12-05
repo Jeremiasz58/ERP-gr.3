@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../style/podstrony.css">
     <link rel="icon" type="image/x-icon" href="../../img/blacks/logo_b.ico">
-    <title>Document</title>
+    <title>DSERP V3 CRM - UPDATE</title>
 </head>
 <body>
     <header>
-        <h1>CRM</h1>
+        <h1>CRM - UPDATE</h1>
     </header>
 
     <?php
@@ -42,10 +42,14 @@
     ?>
 
 
-
-    <a href="./index.php">go to crm</a>
+<a href="index.php">
+    <section id="back" class="btn">
+            <p id="backbtn" >↶</p>
+        </section>
+    </a>
+    <!-- <a href="./index.php">go to crm</a>
     <br>
-    <a href="../main/index.php">go to main</a>
+    <a href="../main/index.php">go to main</a> -->
 
 
 
