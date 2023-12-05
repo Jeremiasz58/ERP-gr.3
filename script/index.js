@@ -2,7 +2,7 @@ document.getElementById("CRM").addEventListener("click", () => {
     window.location.replace("../crm")
 })
 document.getElementById("SPR").addEventListener("click", () => {
-    window.location.replace("../spr")
+    window.location.replace("../sprzedaz")
 })
 document.getElementById("HR").addEventListener("click", () => {
     window.location.replace("../hr")
