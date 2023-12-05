@@ -23,13 +23,14 @@
         <label for="id">Id:</label><br>
         <input type="text" name="id">
         <br>
-        <input type="submit" value="USUN SPRZEDAZ">
+        <div id="fbts_end">
+        <input type="submit" class="fbts" value="Usun">
+        <input type="reset" class="fbts" value="Wyczyść">
+        </div>
+        <a id="back" id="backbtn"href="index.php">↶</a>
     </form>
 
-    <a href="./index.php">go to sprzedaz</a>
-    <br>
 
-    <a href="../main/index.php">go to main</a>
     <footer><p>&copy;DSERP INC</p></footer>
 </body>
 </html>
