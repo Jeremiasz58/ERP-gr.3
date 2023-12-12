@@ -28,13 +28,11 @@
         <label for="id">Id:</label><br>
         <input type="text" name="id">
         <br>
-        <input type="submit" value="USUN USERA">
+        <input type="submit" class="fbts" style="margin-top:0.5vw" value="Usuń Usera">
     </form>
 
-    <a href="index.php">
-    <section id="back" class="btn">
-            <p id="backbtn" >↶</p>
-        </section>
+    <a href="index.php" id="backbtn">
+            ↶
     </a>
     <!-- <a href="./index.php">go to crm</a>
     <br>

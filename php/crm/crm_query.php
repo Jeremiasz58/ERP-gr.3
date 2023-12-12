@@ -15,28 +15,38 @@
     </header>
     <main>
         <?php
-        
+        include "./crm_query_select.html";
+        ?>
+        <div id="just" style="display: none;">
+        <?php
         include "./utils.php";
         
         if($_POST){
+        ?><style type="text/css">
+                  #just {
+                  margin-top:1vw;
+                          display: block!important;
+                }
+                br:first-of-type{
+                display:none}
+            </style>
+            <?php
             switch($_POST["id"]){
                 case 1:
                     foreach(qEmail() as $element){
-                        echo $element."<br>";
+                        echo $element;
+                        echo "<br>";
                     }
                     break;
             }
         }
 
-        include "./crm_query_select.html";
 
         ?>
-        
+        </div>
+
     </main>
-    <a href="index.php">
-    <section id="back" class="btn">
-            <p id="backbtn" >↶</p>
-        </section>
+    <a id="backbtn" href="index.php">↶
     </a>
     <!-- <a href="./index.php">go to crm</a>
     <br>

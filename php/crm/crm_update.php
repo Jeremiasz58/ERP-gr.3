@@ -42,10 +42,7 @@
     ?>
 
 
-<a href="index.php">
-    <section id="back" class="btn">
-            <p id="backbtn" >↶</p>
-        </section>
+<a id="backbtn" href="index.php">↶
     </a>
     <!-- <a href="./index.php">go to crm</a>
     <br>

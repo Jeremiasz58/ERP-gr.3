@@ -35,9 +35,7 @@
             <p>QUERIES</p>
         </a>
     </main>
-    <section id="back">
-            <p id="backbtn" >↶</p>
-    </section>
+    <a href="../main" id="back">↶</a>
     <footer><p>&copy;DSERP INC</p></footer>
 
 </body>
