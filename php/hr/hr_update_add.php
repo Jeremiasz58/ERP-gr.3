@@ -21,5 +21,5 @@
     <label for="mode">SEARCH?</label>
     <input type="checkbox" checked name="mode" value="add">
     <br>
-    <input type="submit" value="ZMIEN PRACOWNIKA">
+    <input type="submit" value="Zmień Pracownika">
 </form>

@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../style/index.css">
-    <script src="../../script/index.js" defer></script>
+    <link rel="stylesheet" href="../../style/podstrony.css">
     <link rel="icon" type="image/x-icon" href="../img/blacks/logo_b.ico">
     <title>DSERP V3</title>
 </head>
@@ -57,9 +56,7 @@
             include "./hr_query_select.html";
         ?>
     </main>
-    <a href="./index.php">go to hr</a>
-    <br>
-    <a href="../main/index.php">go to main</a>
+        <a href="index.php" id="backbtn">↶</a>
 
     <footer><p>&copy;DSERP INC</p></footer>
 </body>

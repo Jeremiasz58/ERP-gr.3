@@ -42,15 +42,12 @@
         <br>
         <input type="text" name="department">
         <br>
-        <input type="submit" value="DODAJ PRACOWNIKA"><br>
-        <a href="./index.php" id="backbtn">↶</a>
+<div id="fbts_end">
+        <input type="submit" class="fbts" value="Dodaj">
+        <input type="reset" class="fbts" value="Wyczyść">
+        </div>
     </form>
 
-
-
-    <br>
-
-    <a href="../main/index.php">go to main</a>
-    <footer><p>&copy;DSERP INC</p></footer>
+        <a href="index.php" id="backbtn">↶</a>
 </body>
 </html>

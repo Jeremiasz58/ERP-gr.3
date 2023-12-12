@@ -20,5 +20,8 @@
     <label for="mode">SEARCH?</label>
     <input type="checkbox" checked name="mode" value="add">
     <br>
-    <input class="fbts" type="submit" value="Zmień Usera">
+    <div id="fbts_end">
+            <input type="submit" class="fbts" value="Zmień Usera">
+            <input type="reset" class="fbts" value="Wyczyść">
+            </div>
 </form>

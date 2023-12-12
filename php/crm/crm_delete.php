@@ -28,7 +28,10 @@
         <label for="id">Id:</label><br>
         <input type="text" name="id">
         <br>
-        <input type="submit" class="fbts" style="margin-top:0.5vw" value="Usuń Usera">
+        <div id="fbts_end">
+                <input type="submit" class="fbts" value="Usuń Usera">
+                <input type="reset" class="fbts" value="Wyczyść">
+                </div>
     </form>
 
     <a href="index.php" id="backbtn">

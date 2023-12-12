@@ -38,10 +38,7 @@
             include "./hr_update_search.html";
         }
     ?>
-
-    <a href="./index.php">go to hr</a>
-    <br>
-    <a href="../main/index.php">go to main</a>
+        <a href="index.php" id="backbtn">↶</a>
 
     <footer><p>&copy;DSERP INC</p></footer>
 </body>
