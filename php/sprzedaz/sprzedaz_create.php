@@ -41,10 +41,8 @@
         <input type="reset" class="fbts" value="Wyczyść">
         </div>
         
-        <a id="backbtn"href="index.php">↶</a>
-        
     </form>
-
+        <a href="index.php" id="backbtn">↶</a>
 
     <footer><p>&copy;DSERP INC</p></footer>
 </body>

@@ -17,8 +17,7 @@
     <input type="checkbox" checked name="mode" value="add">
     <br>
     <div id="fbts_end">
-        <input type="submit" class="fbts" value="zmien sprzedaz">
+        <input type="submit" class="fbts" value="Zmień Sprzedaż">
         <input type="reset" class="fbts" value="Wyczyść">
         </div>
-        <a id="back" id="backbtn"href="index.php">↶</a>
 </form>

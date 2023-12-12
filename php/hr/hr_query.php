@@ -12,6 +12,11 @@
         <h1>DSERP V3 HREJTERZY QUERY</h1>
     </header>
     <main>
+    <?php
+                      include "./hr_query_select.html";
+                  ?>
+
+    <div id="just" style="display:none">
         <?php
         
         include "./utils.php";
@@ -23,6 +28,15 @@
         // 5 - qCountDepartment
 
         if($_POST){
+        ?>
+        <style type="text/css">
+                          #just {
+                          margin-top:1vw;
+                                  display: block!important;
+                        }
+
+                    </style>
+                    <?php
             switch($_POST["id"]){
                 case 1:
                     echo "Najmłodszy: ".qNajstarszyNajmlodszy()[0];
@@ -51,10 +65,8 @@
         }
 
         ?>
+</div>
 
-        <?php
-            include "./hr_query_select.html";
-        ?>
     </main>
         <a href="index.php" id="backbtn">↶</a>
 

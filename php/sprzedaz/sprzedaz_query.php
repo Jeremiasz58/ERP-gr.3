@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../style/index.css">
+    <link rel="stylesheet" href="../../style/podstrony.css">
     <script src="../../script/index.js" defer></script>
     <link rel="icon" type="image/x-icon" href="../img/blacks/logo_b.ico">
     <title>DSERP V3</title>
@@ -13,6 +13,10 @@
         <h1>DSERP V3 HREJTERZY QUERY</h1>
     </header>
     <main>
+            <?php
+                include "./sprzedaz_query_select.html";
+            ?>
+            <div id="just" style="display: none;">
         <?php
         
         include "./utils.php";
@@ -23,6 +27,15 @@
         // 4 - qSumSprzedaz
 
         if($_POST){
+        ?>
+        <style type="text/css">
+                          #just {
+                          margin-top:1vw;
+                                  display: block!important;
+                        }
+
+                    </style>
+                    <?php
             switch($_POST["id"]){
                 case 1:
                     echo "Najbardziej dochodowa transakcja to: <br>";
@@ -44,12 +57,10 @@
         }
 
         ?>
+        </div>
 
-        <?php
-            include "./sprzedaz_query_select.html";
-        ?>
     </main>
-
+        <a href="index.php" id="backbtn">↶</a>
     <footer><p>&copy;DSERP INC</p></footer>
 </body>
 </html>

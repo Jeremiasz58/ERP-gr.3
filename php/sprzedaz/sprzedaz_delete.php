@@ -27,9 +27,9 @@
         <input type="submit" class="fbts" value="Usun">
         <input type="reset" class="fbts" value="Wyczyść">
         </div>
-        <a id="backbtn"href="index.php">↶</a>
-    </form>
 
+    </form>
+        <a href="index.php" id="backbtn">↶</a>
 
     <footer><p>&copy;DSERP INC</p></footer>
 </body>
